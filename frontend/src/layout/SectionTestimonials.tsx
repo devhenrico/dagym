@@ -1,0 +1,25 @@
+import { Puzzle } from "lucide-react";
+import { testimonials } from "@/data/testimonials";
+import { SectionDescription } from "@/components/SectionDescription";
+import { SectionBadge } from "@/components/SectionBadge";
+import { SectionTitle } from "@/components/SectionTitle";
+import { TestimonialRow } from "@/components/TestimonialRow";
+
+export function SectionTestimonials() {
+  return (
+    <section id="testimonials" className="py-24">
+      <div className="flex flex-col items-center gap-6">
+        <SectionBadge icon={Puzzle}>Soluções sob medida</SectionBadge>
+        <SectionTitle>
+          <span className="gradient-text">Confiança</span> além do serviço
+        </SectionTitle>
+        <SectionDescription>
+          Ajudamos a <span className="text-white/90">transformar desafios</span>{" "}
+          em crescimento e sucesso para o seu negócio.
+        </SectionDescription>
+
+        <TestimonialRow testimonials={testimonials} />
+      </div>
+    </section>
+  );
+}
