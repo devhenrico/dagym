@@ -23,7 +23,7 @@ export function router() {
     message: z.string().nonempty({ message: "Preencha a mensagem" }),
   });
 
-  const userQuerySchema = z
+  const formQuerySchema = z
     .object({
       name: z.string().optional(),
       email: z.string().email().optional(),
@@ -57,7 +57,7 @@ export function router() {
 
   router.get("/users", async (req, res) => {
     try {
-      const validatedQuery = userQuerySchema.parse(req.query);
+      const validatedQuery = formQuerySchema.parse(req.query);
       let users = [];
       if (validatedQuery && (validatedQuery.name || validatedQuery.email)) {
         users = await prisma.user.findMany({

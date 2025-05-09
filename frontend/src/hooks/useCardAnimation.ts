@@ -14,6 +14,7 @@ export function useCardAnimation(gridRef: RefObject<HTMLDivElement | null>) {
         gsap.set(card, {
           x: -200,
           opacity: 0,
+          filter: "blur(10px)",
         });
 
         gsap.to(card, {
@@ -25,6 +26,7 @@ export function useCardAnimation(gridRef: RefObject<HTMLDivElement | null>) {
           },
           x: 0,
           opacity: 1,
+          filter: "blur(0px)",
         });
       });
 
@@ -32,19 +34,19 @@ export function useCardAnimation(gridRef: RefObject<HTMLDivElement | null>) {
         gsap.set(card, {
           x: 200,
           opacity: 0,
+          filter: "blur(10px)",
         });
 
         gsap.to(card, {
           scrollTrigger: {
             trigger: card,
             start: "top 80%",
-            end: "top 60%",
-            scrub: 1,
+            end: "top 50%",
+            scrub: 2,
           },
           x: 0,
           opacity: 1,
-          duration: 1,
-          ease: "power2.out",
+          filter: "blur(0px)",
         });
       });
     }

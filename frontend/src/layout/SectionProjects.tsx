@@ -7,8 +7,11 @@ import { Activity } from "lucide-react";
 
 export function SectionProjects() {
   return (
-    <section id="projects" className="py-24">
-      <div className="flex max-w-6xl flex-col items-center gap-6">
+    <section
+      id="projects"
+      className="px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-24"
+    >
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 sm:gap-6">
         <SectionBadge icon={Activity}>Performance em movimento</SectionBadge>
         <SectionTitle>
           Projetos em <span className="gradient-text">destaque</span>

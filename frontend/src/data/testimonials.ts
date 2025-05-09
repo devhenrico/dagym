@@ -39,7 +39,7 @@ export const testimonials = [
     name: "João Silva",
     function: "CEO",
     feedback:
-      "''Transformaram completamente nossa infraestrutura digital, resultando em maior eficiência operacional.''",
+      "''Transformaram nossa infraestrutura digital, resultando em maior eficiência operacional.''",
   },
   {
     img: "https://github.com/theKormann.png",

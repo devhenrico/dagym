@@ -5,13 +5,17 @@ import { FooterNav } from "@/components/FooterNav";
 
 export function Footer() {
   return (
-    <footer className="w-full bg-black px-32 py-5 text-white">
+    <footer className="w-full bg-black px-4 py-5 text-white sm:px-6 md:px-12 lg:px-32">
       <div className="rounded-2xl border border-neutral-800/50">
-        <div className="mx-auto max-w-6xl pt-10">
-          <div className="flex items-center justify-between py-8">
+        <div className="mx-auto max-w-6xl pt-4 md:pt-10">
+          <div className="flex flex-col items-center justify-center gap-4 px-4 py-4 sm:flex-row sm:justify-between sm:px-6 sm:py-8">
             <div>
               <a href="#home">
-                <img src={Logo} alt="DaGym Logo" className="h-10 w-auto" />
+                <img
+                  src={Logo}
+                  alt="DaGym Logo"
+                  className="h-8 w-auto sm:h-10"
+                />
               </a>
             </div>
             <FooterSocial />
@@ -23,7 +27,7 @@ export function Footer() {
 
           <Separator className="bg-gradient-to-r from-neutral-800/10 via-neutral-800 to-neutral-800/10" />
 
-          <h2 className="py-12 text-center text-sm font-medium text-neutral-500">
+          <h2 className="px-4 py-6 text-center text-xs font-medium text-neutral-500 sm:text-sm md:py-12">
             © 2025{" "}
             <span className="transition-colors duration-300 hover:text-white/90">
               DaGym

@@ -6,7 +6,7 @@ interface SectionTitleProps {
 export function SectionTitle({ children, className = "" }: SectionTitleProps) {
   return (
     <h1
-      className={`text-center text-7xl font-semibold text-white/90 ${className}`}
+      className={`px-3 text-center text-4xl font-semibold text-white/90 md:text-5xl lg:text-6xl xl:text-7xl ${className}`}
     >
       {children}
     </h1>

@@ -149,7 +149,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 18px;
 }
 
 ::-webkit-scrollbar-track {
@@ -159,6 +159,7 @@
 ::-webkit-scrollbar-thumb {
   background: var(--color-base);
   border-radius: 10px;
+  border: 5px solid var(--color-black);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -205,11 +206,6 @@
 
 .scroll-right {
   animation: scrollRight 50s linear infinite;
-}
-
-.scroll-left,
-.scroll-right {
-  width: fit-content;
 }
 
 .scroll-left:hover,

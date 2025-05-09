@@ -15,12 +15,12 @@ export function TestimonialRow({ testimonials }: TestimonialRowProps) {
   );
 
   return (
-    <div className="relative mt-12 flex max-w-6xl justify-center overflow-hidden">
-      <div className="pointer-events-none absolute top-0 bottom-0 left-0 z-10 w-16 bg-gradient-to-r from-black to-transparent"></div>
-      <div className="pointer-events-none absolute top-0 right-0 bottom-0 z-10 w-16 bg-gradient-to-l from-black to-transparent"></div>
+    <div className="relative mt-6 flex max-w-6xl justify-center overflow-hidden px-4 sm:mt-8 sm:px-6 md:mt-12 md:px-8">
+      <div className="pointer-events-none absolute top-0 right-0 bottom-0 z-10 w-8 bg-gradient-to-l from-black to-transparent sm:w-12 md:w-16"></div>
+      <div className="pointer-events-none absolute top-0 bottom-0 left-0 z-10 w-8 bg-gradient-to-r from-black to-transparent sm:w-12 md:w-16"></div>
 
       <div className="flex w-full flex-col gap-6">
-        <div className="scroll-left flex">
+        <div className="scroll-left flex w-fit">
           {[...firstRowTestimonials, ...firstRowTestimonials].map(
             (testimonial, index) => (
               <TestimonialCard
@@ -34,7 +34,7 @@ export function TestimonialRow({ testimonials }: TestimonialRowProps) {
           )}
         </div>
 
-        <div className="scroll-right flex">
+        <div className="scroll-right flex w-fit">
           {[...secondRowTestimonials, ...secondRowTestimonials].map(
             (testimonial, index) => (
               <TestimonialCard
