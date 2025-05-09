@@ -10,7 +10,9 @@ export function useTextAnimation(selector: string = ".text-animated") {
     const elements = document.querySelectorAll(selector);
 
     elements.forEach((char) => {
-      const split = new SplitType(char as HTMLElement, { types: "chars" });
+      const split = new SplitType(char as HTMLElement, {
+        types: "words,chars",
+      });
 
       gsap.from(split.chars, {
         scrollTrigger: {

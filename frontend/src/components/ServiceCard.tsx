@@ -12,7 +12,7 @@ interface ServiceCardProps {
 
 export function ServiceCard({ services }: ServiceCardProps) {
   return (
-    <div className="mt-8 flex w-full justify-center px-4 sm:mt-10 sm:px-6 md:mt-12 md:px-8">
+    <div className="mt-8 flex w-full justify-center sm:mt-10 sm:px-2 md:mt-12 md:px-4">
       <div className="grid max-w-7xl grid-cols-1 gap-8 sm:gap-10 md:grid-cols-2 md:gap-14 lg:grid-cols-3 lg:gap-24">
         {services.map((service, index) => (
           <Card

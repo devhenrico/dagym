@@ -20,13 +20,9 @@ export function Footer() {
             </div>
             <FooterSocial />
           </div>
-
           <Separator className="bg-gradient-to-r from-neutral-800/10 via-neutral-800 to-neutral-800/10" />
-
           <FooterNav />
-
           <Separator className="bg-gradient-to-r from-neutral-800/10 via-neutral-800 to-neutral-800/10" />
-
           <h2 className="px-4 py-6 text-center text-xs font-medium text-neutral-500 sm:text-sm md:py-12">
             © 2025{" "}
             <span className="transition-colors duration-300 hover:text-white/90">

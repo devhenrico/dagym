@@ -11,7 +11,7 @@ export function SectionTestimonials() {
       id="testimonials"
       className="w-full overflow-hidden px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-24"
     >
-      <div className="mx-auto flex w-full flex-col items-center gap-4 sm:gap-6">
+      <div className="flex w-full flex-col items-center gap-4 sm:gap-6">
         <SectionBadge icon={Puzzle}>Soluções sob medida</SectionBadge>
         <SectionTitle>
           <span className="gradient-text">Confiança</span> além do serviço

@@ -14,9 +14,9 @@ export function SectionHome() {
         <div className="bg-base h-2/3 w-2/3 rounded-full opacity-3 blur-3xl"></div>
       </div>
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black"></div>
-      <div className="mx-auto mt-20 flex flex-col items-center gap-4 px-4 md:mt-40 md:gap-6">
+      <div className="flex flex-col items-center gap-4 md:gap-6">
         <SectionBadge icon={Zap}>Conectando tecnologia</SectionBadge>
-        <SectionTitle className="max-w-6xl text-center text-3xl md:text-5xl">
+        <SectionTitle className="max-w-6xl">
           Desenvolvimento <span className="gradient-text">inteligente</span>{" "}
           para um mundo em movimento
         </SectionTitle>
@@ -30,24 +30,35 @@ export function SectionHome() {
         </p>
         <ButtonPrimary href="#about">Saiba mais</ButtonPrimary>
 
-        <div className="relative mt-10 w-full md:mt-30">
-          <p className="mb-6 text-center text-sm font-medium tracking-wide text-neutral-500 md:mb-10 md:text-lg">
-            Confiança de <span className="text-white/90">30.000+</span>{" "}
-            desenvolvedores e empresas
-          </p>
+        <div className="relative mt-8 w-full md:mt-14">
+          <div className="absolute right-0 left-0 mt-18 md:mt-14">
+            <p className="mb-6 text-center text-sm font-medium tracking-wide text-neutral-500 md:mb-10 md:text-lg">
+              Confiança de <span className="text-white/90">30.000+</span>{" "}
+              desenvolvedores e empresas
+            </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-12 md:gap-28">
-            <Icons
-              name="amazon"
-              className="hidden h-7 opacity-30 md:block md:h-10"
-            />
-            <Icons name="microsoft" className="h-7 opacity-30 md:h-10" />
-            <Icons name="nubank" className="h-7 opacity-30 md:h-10" />
-            <Icons name="playstation" className="h-7 opacity-30 md:h-10" />
-            <Icons
-              name="uber"
-              className="hidden h-7 opacity-30 md:block md:h-10"
-            />
+            <div className="flex items-center justify-center gap-10 sm:gap-12 md:gap-16 lg:gap-24 xl:gap-32">
+              <Icons
+                name="amazon"
+                className="hidden h-5 opacity-30 sm:block sm:h-6 md:h-7 lg:h-9 xl:h-10"
+              />
+              <Icons
+                name="microsoft"
+                className="h-5 opacity-30 sm:h-6 md:h-7 lg:h-9 xl:h-10"
+              />
+              <Icons
+                name="nubank"
+                className="h-5 opacity-30 sm:h-6 md:h-7 lg:h-9 xl:h-10"
+              />
+              <Icons
+                name="playstation"
+                className="h-5 opacity-30 sm:h-6 md:h-7 lg:h-9 xl:h-10"
+              />
+              <Icons
+                name="uber"
+                className="hidden h-5 opacity-30 sm:block sm:h-6 md:h-7 lg:h-9 xl:h-10"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -13,7 +13,7 @@ export function SectionAbout() {
         <SectionTitle>
           Conheça nossa <span className="gradient-text">missão</span> e valores
         </SectionTitle>
-        <p className="text-animated px-4 text-justify text-lg leading-relaxed text-white/90 sm:px-8 sm:text-2xl md:px-16 md:text-3xl lg:text-4xl">
+        <p className="text-animated px-5 text-lg leading-relaxed text-white/90 sm:px-8 sm:text-2xl md:px-24 md:text-3xl lg:text-4xl">
           <span className="mr-12 text-center text-xs font-light text-neutral-400 uppercase sm:mr-14 sm:text-xl">
             Sobre a DaGym
           </span>
@@ -23,7 +23,7 @@ export function SectionAbout() {
           fortalecer a presença da sua marca, aumentar sua autoridade no mercado
           e impulsionar seus resultados. Traduzimos a ideia da sua empresa em
           cada detalhe, com soluções digitais que unem design, funcionalidade e
-          propósito . Buscamos estar sempre à frente, com foco em originalidade,
+          propósito. Buscamos estar sempre à frente, com foco em originalidade,
           excelência e impacto real. Valorizamos o que torna cada negócio único,
           e é por isso que cada criação carrega identidade, intenção e um
           cuidado. Porque entendemos que seu negócio tem uma história única — e
