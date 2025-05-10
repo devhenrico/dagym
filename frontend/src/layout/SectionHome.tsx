@@ -30,8 +30,8 @@ export function SectionHome() {
         </p>
         <ButtonPrimary href="#about">Saiba mais</ButtonPrimary>
 
-        <div className="relative mt-8 w-full md:mt-14">
-          <div className="absolute right-0 left-0 mt-18 md:mt-14">
+        <div className="relative mt-34 w-full md:mt-14">
+          <div className="absolute right-0 left-0 md:mt-14">
             <p className="mb-6 text-center text-sm font-medium tracking-wide text-neutral-500 md:mb-10 md:text-lg">
               Confiança de <span className="text-white/90">30.000+</span>{" "}
               desenvolvedores e empresas

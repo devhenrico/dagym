@@ -91,7 +91,7 @@ export function Header() {
                 </div>
 
                 <div className="mt-30 flex flex-col px-10">
-                  <div className="flex flex-col space-y-10">
+                  <div className="flex flex-col space-y-8">
                     <SheetClose asChild>
                       <a
                         href="#home"
