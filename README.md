@@ -1,4 +1,4 @@
-# 💻 DaGym
+# 💻 DaGym - Desenvolvimento Web
 
 ## 📋 Sobre o Projeto
 **DaGym** é uma plataforma moderna de desenvolvimento web focada em criar sites minimalistas, responsivos e funcionais para empresas e profissionais. Unindo design, estratégia e tecnologia para entregar experiências digitais únicas, que fortalecem marcas e impulsionam resultados.
