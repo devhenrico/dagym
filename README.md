@@ -9,7 +9,7 @@
 - Navegação Intuitiva : Sistema de navegação fluido com indicação de seção ativa
 - Depoimentos Dinâmicos : Carrossel de depoimentos com rolagem automática
 - Integração Backend : API RESTful com Prisma para gerenciamento de dados
-- 
+
 ## 🛠️ Tecnologias Utilizadas
 ### Frontend
 - React
