@@ -2,6 +2,6 @@ import axios from "axios";
 
 export function api() {
   return axios.create({
-    baseURL: "https://dagym.onrender.com",
+    baseURL: "https://api.dagym.dev",
   });
 }

@@ -6,7 +6,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(cors());
+
+app.use(
+  cors({
+    origin: ["https://dagym.dev", "https://www.dagym.dev"],
+    credentials: true,
+  })
+);
 
 app.use("/", router());
 
