@@ -2,6 +2,7 @@ import { Separator } from "@/components/ui/separator";
 import Logo from "../assets/images/logo.png";
 import { FooterSocial } from "@/components/FooterSocial";
 import { FooterNav } from "@/components/FooterNav";
+import { scrollToSection } from "@/lib/utils";
 
 export function Footer() {
   return (
@@ -10,13 +11,17 @@ export function Footer() {
         <div className="mx-auto max-w-6xl pt-4 md:pt-10">
           <div className="flex flex-col items-center justify-center gap-4 px-4 py-4 sm:flex-row sm:justify-between sm:px-6 sm:py-8">
             <div>
-              <a href="#home">
+              <button
+                type="button"
+                onClick={() => scrollToSection("home")}
+                className="cursor-pointer"
+              >
                 <img
                   src={Logo}
                   alt="DaGym Logo"
                   className="h-8 w-auto sm:h-10"
                 />
-              </a>
+              </button>
             </div>
             <FooterSocial />
           </div>

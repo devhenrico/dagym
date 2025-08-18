@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { scrollToTop } from "@/lib/utils";
 
 export function useScrollTop(threshold = 300) {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -18,13 +19,6 @@ export function useScrollTop(threshold = 300) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [threshold]);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
 
   return {
     showScrollTop,

@@ -2,12 +2,12 @@ import { ArrowButton } from "@/components/ArrowButton";
 import { Header } from "../layout/Header";
 import { SectionHome } from "../layout/SectionHome";
 import { SectionAbout } from "../layout/SectionAbout";
-import { SectionServices } from "../layout/SectionServices";
-import { SectionTestimonials } from "../layout/SectionTestimonials";
-import { Footer } from "../layout/Footer";
-import { SectionContact } from "@/layout/SectionContact";
-import { SectionProjects } from "@/layout/SectionProjects";
 import { SectionProcess } from "@/layout/SectionProcess";
+import { SectionServices } from "../layout/SectionServices";
+import { SectionProjects } from "@/layout/SectionProjects";
+import { SectionTestimonials } from "../layout/SectionTestimonials";
+import { SectionContact } from "@/layout/SectionContact";
+import { Footer } from "../layout/Footer";
 
 export function HomePage() {
   return (

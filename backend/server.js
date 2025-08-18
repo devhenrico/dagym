@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["https://dagym.dev", "https://www.dagym.dev"],
+    origin: ["https://www.dagym.dev"],
     credentials: true,
   })
 );

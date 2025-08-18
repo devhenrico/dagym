@@ -1,4 +1,5 @@
 import { footerNav } from "@/data/footer-nav";
+import { scrollToSection } from "@/lib/utils";
 
 export function FooterNav() {
   return (
@@ -11,12 +12,24 @@ export function FooterNav() {
           <ul className="space-y-2">
             {item.links.map((link) => (
               <li key={link.label}>
-                <a
-                  href={link.href}
-                  className="text-xs font-medium tracking-wide text-neutral-400 transition-colors duration-300 hover:text-white sm:text-sm"
-                >
-                  {link.label}
-                </a>
+                {link.href.startsWith("#") ? (
+                  <button
+                    type="button"
+                    className="cursor-pointer text-xs font-medium tracking-wide text-neutral-400 transition-colors duration-300 hover:text-white sm:text-sm"
+                    onClick={() => scrollToSection(link.href.replace("#", ""))}
+                  >
+                    {link.label}
+                  </button>
+                ) : (
+                  <a
+                    href={link.href}
+                    className="text-xs font-medium tracking-wide text-neutral-400 transition-colors duration-300 hover:text-white sm:text-sm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                  </a>
+                )}
               </li>
             ))}
           </ul>

@@ -1,4 +1,5 @@
 import { ChevronDown, Fingerprint } from "lucide-react";
+import { scrollToSection } from "@/lib/utils";
 import { SectionTitle } from "@/components/SectionTitle";
 import { SectionBadge } from "@/components/SectionBadge";
 import { useTextAnimation } from "@/hooks/useTextAnimation";
@@ -29,9 +30,13 @@ export function SectionAbout() {
           cuidado. Porque entendemos que seu negócio tem uma história única — e
           ela merece ser de forma especial.
         </p>
-        <a href="#process" className="animate-float mt-4 sm:mt-6">
-          <ChevronDown className="size-6 text-base sm:size-8" />
-        </a>
+        <button
+          type="button"
+          className="animate-float mt-2 cursor-pointer"
+          onClick={() => scrollToSection("process")}
+        >
+          <ChevronDown className="size-7 text-base hover:text-orange-600 sm:size-9" />
+        </button>
       </div>
     </section>
   );

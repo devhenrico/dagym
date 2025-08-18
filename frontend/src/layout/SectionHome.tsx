@@ -1,5 +1,6 @@
 import { Zap } from "lucide-react";
 import { ButtonPrimary } from "@/components/ButtonPrimary";
+import { scrollToSection } from "@/lib/utils";
 import { SectionBadge } from "@/components/SectionBadge";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Icons } from "@/components/Icons";
@@ -28,7 +29,9 @@ export function SectionHome() {
           , que se adaptam às mudanças do mercado e posicionam você à frente da
           concorrência.
         </p>
-        <ButtonPrimary href="#about">Saiba mais</ButtonPrimary>
+        <ButtonPrimary onClick={() => scrollToSection("about")}>
+          Saiba mais
+        </ButtonPrimary>
 
         <div className="relative mt-34 w-full md:mt-14">
           <div className="absolute right-0 left-0 md:mt-14">

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { NavBar } from "@/components/NavBar";
 import Logo from "../assets/images/logo.png";
+import { scrollToSection } from "@/lib/utils";
 import { Text, X } from "lucide-react";
 import {
   Sheet,
@@ -47,13 +48,17 @@ export function Header() {
     >
       <div className="mx-auto max-w-xl rounded-full bg-transparent p-1 text-white md:border md:border-neutral-700/50 md:bg-neutral-950/30 md:p-3 md:shadow-md md:shadow-zinc-800/30 md:backdrop-blur-xl">
         <nav className="flex items-center justify-between">
-          <a href="#home">
+          <button
+            type="button"
+            onClick={() => scrollToSection("home")}
+            className="cursor-pointer"
+          >
             <img
               src={Logo}
               alt="DaGym Logo"
               className="h-11 w-auto md:h-10 md:pl-2"
             />
-          </a>
+          </button>
 
           <div className="hidden md:block">
             <NavBar
@@ -63,12 +68,13 @@ export function Header() {
           </div>
 
           <div className="hidden md:block">
-            <a
-              href="#contact"
-              className="bg-base rounded-full px-3 py-2 text-sm font-medium tracking-wide text-white opacity-90 transition-opacity duration-300 hover:opacity-100"
+            <button
+              type="button"
+              className="bg-base cursor-pointer rounded-full px-3 py-2 text-sm font-medium tracking-wide text-white opacity-90 transition-opacity duration-300 hover:opacity-100"
+              onClick={() => scrollToSection("contact")}
             >
               Solicitar
-            </a>
+            </button>
           </div>
 
           <div className="md:hidden">
@@ -93,66 +99,79 @@ export function Header() {
                 <div className="mt-30 flex flex-col px-10">
                   <div className="flex flex-col space-y-8">
                     <SheetClose asChild>
-                      <a
-                        href="#home"
+                      <button
+                        type="button"
                         className={`font-medium ${
                           activeSection === "home" ? "text-base" : "text-white"
                         }`}
-                        onClick={() => setActiveSection("home")}
+                        onClick={() => {
+                          scrollToSection("home");
+                          setActiveSection("home");
+                        }}
                       >
                         Início
-                      </a>
+                      </button>
                     </SheetClose>
 
                     <SheetClose asChild>
-                      <a
-                        href="#about"
+                      <button
+                        type="button"
                         className={`font-medium ${
                           activeSection === "about" ? "text-base" : "text-white"
                         }`}
-                        onClick={() => setActiveSection("about")}
+                        onClick={() => {
+                          scrollToSection("about");
+                          setActiveSection("about");
+                        }}
                       >
                         Sobre
-                      </a>
+                      </button>
                     </SheetClose>
 
                     <SheetClose asChild>
-                      <a
-                        href="#services"
+                      <button
+                        type="button"
                         className={`font-medium ${
                           activeSection === "services"
                             ? "text-base"
                             : "text-white"
                         }`}
-                        onClick={() => setActiveSection("services")}
+                        onClick={() => {
+                          scrollToSection("services");
+                          setActiveSection("services");
+                        }}
                       >
                         Serviços
-                      </a>
+                      </button>
                     </SheetClose>
 
                     <SheetClose asChild>
-                      <a
-                        href="#contact"
+                      <button
+                        type="button"
                         className={`font-medium ${
                           activeSection === "contact"
                             ? "text-base"
                             : "text-white"
                         }`}
-                        onClick={() => setActiveSection("contact")}
+                        onClick={() => {
+                          scrollToSection("contact");
+                          setActiveSection("contact");
+                        }}
                       >
                         Contato
-                      </a>
+                      </button>
                     </SheetClose>
 
                     <Separator className="bg-gradient-to-r from-neutral-800/10 via-neutral-800 to-neutral-800/10" />
 
                     <SheetClose asChild>
-                      <a
-                        href="#contact"
+                      <button
+                        type="button"
                         className="bg-base mt-1 rounded-full py-2.5 text-center text-sm font-medium tracking-wide text-white opacity-90 transition-opacity duration-300 hover:opacity-100"
+                        onClick={() => scrollToSection("contact")}
                       >
                         Solicitar
-                      </a>
+                      </button>
                     </SheetClose>
                   </div>
                 </div>

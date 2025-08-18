@@ -1,6 +1,7 @@
+import { scrollToSection } from "@/lib/utils";
+
 interface NavLink {
   name: string;
-  href: string;
   section: string;
 }
 
@@ -10,23 +11,26 @@ interface NavBarProps {
 }
 
 const navLinks: NavLink[] = [
-  { name: "Início", href: "#home", section: "home" },
-  { name: "Sobre", href: "#about", section: "about" },
-  { name: "Serviços", href: "#services", section: "services" },
-  { name: "Contato", href: "#contact", section: "contact" },
+  { name: "Início", section: "home" },
+  { name: "Sobre", section: "about" },
+  { name: "Serviços", section: "services" },
+  { name: "Contato", section: "contact" },
 ];
 
 export function NavBar({ activeSection, setActiveSection }: NavBarProps) {
   return (
     <ul className="flex gap-7">
-      {navLinks.map(({ name, href, section }) => (
+      {navLinks.map(({ name, section }) => (
         <li key={section}>
-          <a
-            href={href}
-            className={`group relative text-sm font-medium tracking-wide transition-colors duration-300 ${
+          <button
+            type="button"
+            className={`group relative cursor-pointer text-sm font-medium tracking-wide transition-colors duration-300 ${
               activeSection === section ? "text-white" : "text-neutral-400"
             }`}
-            onClick={() => setActiveSection(section)}
+            onClick={() => {
+              scrollToSection(section);
+              setActiveSection(section);
+            }}
           >
             <h2 className="group-hover:text-white">{name}</h2>
             <div
@@ -34,7 +38,7 @@ export function NavBar({ activeSection, setActiveSection }: NavBarProps) {
                 activeSection === section ? "w-full" : "w-0 group-hover:w-full"
               }`}
             ></div>
-          </a>
+          </button>
         </li>
       ))}
     </ul>
